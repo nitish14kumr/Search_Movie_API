@@ -1,0 +1,21 @@
+<h1>
+    <strong><%= data['Title'] %></strong>
+    ( <%= data['Year']  %> )
+</h1>
+<a href="/"><button>Search Again!</button></a>
+<ul>
+    <li> <strong>Release Date</strong> : <%= data['Released'] %> </li>
+    <li> <strong>Rating</strong> : <%= data['imdbRating'] %> </li>
+    <li> <strong>Runtime</strong> : <%= data['Runtime'] %> </li>
+    <li> <strong>Genre</strong> : <%= data['Genre'] %> </li>
+    <li> <strong>Director</strong> : <%= data['Director'] %> </li>
+    <li> <strong>Writer</strong> : <%= data['Writer'] %> </li>
+    <li> <strong>Cast</strong> : <%= data['Actors'] %> </li>
+    <li> <strong>Storyline</strong> : <%= data['Plot'] %> </li>
+    <li> <strong>Language</strong> : <%= data['Language'] %> </li>
+    <li> <strong>Country</strong> : <%= data['Country'] %> </li>
+    <li> <strong>Awards</strong> : <%= data['Awards'] %> </li>
+    <li> <strong>Type</strong> : <%= data['Type'] %> </li>
+    <li> <strong>Production</strong> : <%= data['Production'] %> </li>
+    <li> <strong>Website</strong> : <a href=<%= data['Website'] %>><%= data['Website'] %></a> </li>
+</ul>

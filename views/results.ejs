@@ -1,0 +1,21 @@
+<h1>Results page</h1>
+<a href="/"><button>Search Again!</button></a>
+<% if(data.Response === "True"){ %>
+    <ol>
+    <% data.Search.forEach(function(movie){ %>
+        <li>
+            <a href=<%= "/movie?id=" + movie['imdbID'] %>>
+                <strong><%= movie['Title'].toUpperCase() %></strong>
+            </a>
+            <ul>
+                <li>Year : <%= movie['Year'] %></li>
+                <li>Type : <%= movie['Type'] %></li>
+                <li>ID : <%= movie['imdbID'] %></li>
+            </ul>
+            <br/>
+        </li>
+    <% }); %>
+    </ol>    
+<% } else { %>
+    <h3>No Match Found!! Try Something Different.</h3>
+<% } %>
